@@ -4,23 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Popodanec v0.0.1</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px;
+      background-color: #1e1e1e;
+      width: 100%;
+      border-bottom: 1px solid #333;
+    }
+
+    nav button {
+      background: #222;
+      color: #ddd;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    nav button:hover {
+      background: #333;
+    }
+
+    nav button.active {
+      background: #0077ff;
+      color: #fff;
+    }
+
+    section {
+      flex: 1;
+      width: 90%;
+      max-width: 500px;
+      background: #1a1a1a;
+      margin: 12px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #0005;
+      overflow-y: auto;
+    }
+
+    button {
+      background: #0077ff;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #005fcf;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #ffa500;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
-  <div id="app">
-    <h1>Popodanec v0.0.1</h1>
-    <nav>
-      <button data-tab="main">Главная</button>
-      <button data-tab="skills">Навыки</button>
-      <button data-tab="equipment">Экипировка</button>
-      <button data-tab="fishing">Рыбалка</button>
-      <button data-tab="woodcutting">Лесорубка</button>
-      <button data-tab="gathering">Собирательство</button>
-      <button data-tab="mining">Шахта</button>
-      <button data-tab="settings">Настройки</button>
-    </nav>
-    <section id="content"></section>
-  </div>
+  <h1>⚔️ Popodanec v0.0.1</h1>
+  <div id="app"></div>
+
   <script src="script.js"></script>
 </body>
 </html>
